@@ -1,1 +1,1 @@
-javascript first lesson 
+javascript first lesson in VS Code
