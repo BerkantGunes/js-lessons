@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="card-header">
+        <h3 class="card-title h1" id="title">Todo App new</h3>
+    </div>
+
+    <ul id="task-list">
+        <li>Task 1</li>
+        <li>Task 2</li>
+        <li>Task 3</li>
+    </ul>
+
+    <script>
+        let sonuc;
+
+        sonuc = document.getElementById("title");
+        sonucId = document.getElementById("title").id;
+        sonucClass = document.getElementById("title").className;
+        sonucClassList = document.getElementById("title").classList;
+
+        document.getElementById("title").style.fontSize = "30px";
+        document.getElementById("title").style.color = "blue";
+        document.getElementById("title").innerText = "Todo App";
+
+        secim = document.querySelector(".card-header"); //class uzerinden secim yaptik
+
+        secimList = document.querySelector("li");
+        secimList = document.querySelector("li:first-child");
+        secimList = document.querySelector("li:last-child").innerText;
+        // querySelector tek bir eleman dondurur. Tek secim yapabiliriz.
+        
+        console.log(secimList);
+    </script>
+</body>
+</html>
