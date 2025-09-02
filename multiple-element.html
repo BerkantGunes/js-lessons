@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="card-header">
+        <h3 class="card-title h1" id="title">Todo App new</h3>
+    </div>
+
+    <ul id="task-list">
+        <li class="task">Task 1</li>
+        <li class="task">Task 2</li>
+        <li class="task">Task 3</li>
+    </ul>
+
+    <script>
+       
+       sonuc = document.getElementsByClassName("task")[0];  
+       document.getElementById("title").style.fontSize = "35px";
+       
+        taskList = document.getElementsByClassName("task");
+        // for(let i = 0; i<taskList.length;i++) {
+        //     console.log(taskList[i]);
+        // }
+
+        for(let task of taskList) {
+            task.style.color="red";
+            task.style.fontSize = "25px";
+            // task.innerText = "Item";
+        }
+
+        // console.log(sonuc);
+    </script>
+</body>
+</html>
